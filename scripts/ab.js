@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   };
 
-  // let contactManager = new ContactManager();
+  let contactManager = new ContactManager();
 
   form.onsubmit = (e) => {
     e.preventDefault();
