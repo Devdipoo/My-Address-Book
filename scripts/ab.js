@@ -120,16 +120,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let objectStore = transaction.objectStore('contacts');
     let request = objectStore.delete(contactId);
 
-    transaction.oncomplete = () => {
-      document.querySelector(`[data-contact-id="${contactId}"]`).remove();
-      console.log('Contact ' + contactId + ' deleted.');
+    // transaction.oncomplete = () => {
+    //   document.querySelector(`[data-contact-id="${contactId}"]`).remove();
+    //   console.log('Contact ' + contactId + ' deleted.');
 
-      if (!conData.firstChild) {
-        let para = document.createElement('p');
-        para.textContent = 'No contacts stored.';
-        conData.appendChild(para);
-      }
-    };
+    //   if (!conData.firstChild) {
+    //     let para = document.createElement('p');
+    //     para.textContent = 'No contacts stored.';
+    //     conData.appendChild(para);
+    //   }
+    // };
   };
 
   let contactManager = new ContactManager();
