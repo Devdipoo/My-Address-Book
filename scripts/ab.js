@@ -134,15 +134,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let contactManager = new ContactManager();
 
-//   form.onsubmit = (e) => {
-//     e.preventDefault();
-//     let newItem = {
-//       name: nameInput.value,
-//       address: addInput.value,
-//       telephone: telInput.value,
-//       email: emailInput.value,
-//       url: urlInput.value
-//     };
-//     contactManager.addContact(newItem);
-//   };
-// });
+  form.onsubmit = (e) => {
+    e.preventDefault();
+    let newItem = {
+      name: nameInput.value,
+      address: addInput.value,
+      telephone: telInput.value,
+      email: emailInput.value,
+      url: urlInput.value
+    };
+    contactManager.addContact(newItem);
+  };
+});
